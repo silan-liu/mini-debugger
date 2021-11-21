@@ -1,2 +1,2 @@
 # mini-debugger
-linux mini debugger written in c++.
+a linux mini debugger written in c++.
