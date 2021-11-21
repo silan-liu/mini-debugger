@@ -2,13 +2,13 @@
 
 a linux mini debugger written in c++.
 
-# 编译运行程序
+# Run
 
 ## 前提
 
 首先要安装 cmake 工具。
 
-## 编译& 运行
+## 编译 & 运行
 
 1. 拉取 submodule
 
@@ -33,6 +33,7 @@ make
 ```
 
 4. 运行程序
+
 ```sh
 ./minidbg hello
 ```
