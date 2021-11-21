@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/minidbg.dir/src/debugger.cpp.o CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o  -o minidbg   -L/home/project/mini-debugger/ext/libelfin/dwarf  -L/home/project/mini-debugger/ext/libelfin/elf  -Wl,-rpath,/home/project/mini-debugger/ext/libelfin/dwarf:/home/project/mini-debugger/ext/libelfin/elf -ldwarf++ -lelf++ 
