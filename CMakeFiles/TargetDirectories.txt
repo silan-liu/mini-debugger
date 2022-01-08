@@ -1,0 +1,5 @@
+/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/edit_cache.dir
+/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/libelfin.dir
+/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/hello.dir
+/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/minidbg.dir

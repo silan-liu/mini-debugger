@@ -46,8 +46,10 @@ void debugger::run() {
 	int wait_status;
 	auto options = 0;
 
-	// 等待子进程执行完成，即被追踪的程序启动完成，会发送 SIGTRAP 信号
+	// 等待子进程状态变化，这里也就是暂停。被追踪的程序启动完成，会收到 SIGTRAP 信号，暂停
 	waitpid(m_pid, &wait_status, options);
+	
+        std::cout << "debugger waitpid status: " << wait_status << "; if stopped:" << WIFSTOPPED(wait_status) << "\n";
 
 	char *line = nullptr;
 	while((line = linenoise("minidebugger> ")) != nullptr) {
@@ -63,12 +65,15 @@ void debugger::continue_execution() {
 	int wait_status;
 	auto options = 0;
 
-	// 等待 ptrace 发送信号
+	// 等待子进程状态变化，这里是退出
 	waitpid(m_pid, &wait_status, options);
+
+        std::cout << "continue_execution  waitpid status: " << wait_status << "; if exited:" << WIFEXITED(wait_status) << "\n";
+
 }
 
 void execute_debugee(const std::string& prog_name) {
-	// 允许父进程可对其 trace
+	// 允许父进程可对其进行跟踪
 	if (ptrace(PTRACE_TRACEME, 0, 0, 0) < 0) {
 		std::cerr << "Error in patrace\n";
 		return;
