@@ -6,7 +6,18 @@ a linux mini debugger written in c++.
 
 ## 前提
 
-首先要安装 cmake 工具。
+首先要安装 cmake 工具，通过以下命令：
+
+```jsx
+sudo apt install cmake
+```
+
+注：如果在 `make` 时出现 `No CMAKE_CXX_COMPILER could be found.`，执行如下命令即可。
+
+```jsx
+sudo apt-get update
+sudo apt-get install -y build-essential
+```
 
 ## 编译 & 运行
 
