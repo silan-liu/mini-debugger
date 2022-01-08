@@ -19,6 +19,8 @@ sstream
 -
 iostream
 -
+sys/personality.h
+-
 linenoise.h
 /home/ubuntu/developer/projects/mini-debugger/src/linenoise.h
 debugger.hpp
@@ -26,11 +28,23 @@ debugger.hpp
 
 ext/linenoise/linenoise.h
 
+include/breakpoint.hpp
+cstdint
+-
+sys/ptrace.h
+-
+iostream
+-
+
 include/debugger.hpp
 utility
 -
 string
 -
 linux/types.h
+-
+breakpoint.hpp
+include/breakpoint.hpp
+unordered_map
 -
 

@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <sstream>
 #include <iostream>
+#include <sys/personality.h>
 
 #include "linenoise.h"
 #include "debugger.hpp"
@@ -37,6 +38,9 @@ void debugger::handle_command(const std::string& line) {
 
 	if (is_prefix(command, "cont")) {
 		continue_execution();
+	} else if (is_prefix(command, "breakpoint")) {
+		std::string addr {args[1], 2};
+		set_breakpoint_at_address(std::stol(addr, 0, 16));
 	} else {
 		std::cerr << "Unknown command\n";
 	}
@@ -60,8 +64,9 @@ void debugger::run() {
 }
 
 void debugger::continue_execution() {
-	ptrace(PTRACE_CONT, m_pid, nullptr, nullptr);
 
+	ptrace(PTRACE_CONT, m_pid, nullptr, nullptr);
+	
 	int wait_status;
 	auto options = 0;
 
@@ -70,6 +75,13 @@ void debugger::continue_execution() {
 
         std::cout << "continue_execution  waitpid status: " << wait_status << "; if exited:" << WIFEXITED(wait_status) << "\n";
 
+}
+
+void debugger::set_breakpoint_at_address(std::intptr_t addr) {
+	std::cout << "set breakpoint at address 0x" << std::hex << addr << std::endl;
+	breakpoint bp {m_pid, addr};
+	bp.enable();
+	m_breakpoints[addr] = bp;
 }
 
 void execute_debugee(const std::string& prog_name) {
@@ -92,6 +104,8 @@ int main(int argc, char *argv[]) {
 
 	auto pid = fork();
 	if (pid == 0) {
+		personality(ADDR_NO_RANDOMIZE);
+
 		// child，执行被 debug 的程序
 		execute_debugee(prog);
 	} else if (pid > 0) {

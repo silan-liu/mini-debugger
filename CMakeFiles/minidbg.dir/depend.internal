@@ -7,4 +7,5 @@ CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o
 CMakeFiles/minidbg.dir/src/debugger.cpp.o
  /home/ubuntu/developer/projects/mini-debugger/src/debugger.cpp
  ext/linenoise/linenoise.h
+ include/breakpoint.hpp
  include/debugger.hpp
