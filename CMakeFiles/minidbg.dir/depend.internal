@@ -9,3 +9,4 @@ CMakeFiles/minidbg.dir/src/debugger.cpp.o
  ext/linenoise/linenoise.h
  include/breakpoint.hpp
  include/debugger.hpp
+ include/registers.hpp

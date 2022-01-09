@@ -25,6 +25,8 @@ linenoise.h
 /home/ubuntu/developer/projects/mini-debugger/src/linenoise.h
 debugger.hpp
 /home/ubuntu/developer/projects/mini-debugger/src/debugger.hpp
+registers.hpp
+/home/ubuntu/developer/projects/mini-debugger/src/registers.hpp
 
 ext/linenoise/linenoise.h
 
@@ -46,5 +48,17 @@ linux/types.h
 breakpoint.hpp
 include/breakpoint.hpp
 unordered_map
+-
+
+include/registers.hpp
+sys/user.h
+-
+algorithm
+-
+iostream
+-
+sys/ptrace.h
+-
+sys/uio.h
 -
 

@@ -8,6 +8,7 @@
 
 #include "linenoise.h"
 #include "debugger.hpp"
+#include "registers.hpp"
 
 using namespace minidebugger;
 
@@ -41,6 +42,10 @@ void debugger::handle_command(const std::string& line) {
 	} else if (is_prefix(command, "breakpoint")) {
 		std::string addr {args[1], 2};
 		set_breakpoint_at_address(std::stol(addr, 0, 16));
+	} else if (is_prefix(command, "registers")) {
+		if (is_prefix(args[1], "dump")) {
+			dump_registers();
+		}
 	} else {
 		std::cerr << "Unknown command\n";
 	}
@@ -82,6 +87,10 @@ void debugger::set_breakpoint_at_address(std::intptr_t addr) {
 	breakpoint bp {m_pid, addr};
 	bp.enable();
 	m_breakpoints[addr] = bp;
+}
+
+void debugger::dump_registers() {
+	get_register_value(m_pid);	
 }
 
 void execute_debugee(const std::string& prog_name) {

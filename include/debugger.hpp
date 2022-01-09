@@ -20,6 +20,8 @@ namespace minidebugger {
 		void continue_execution();
 		void set_breakpoint_at_address(std::intptr_t addr);
 
+		void dump_registers();
+
 		std::string m_prog_name;
 		pid_t m_pid;
 		std::unordered_map<std::intptr_t, breakpoint> m_breakpoints;
