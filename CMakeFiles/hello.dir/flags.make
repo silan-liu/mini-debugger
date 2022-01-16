@@ -6,5 +6,5 @@ CXX_FLAGS =   -g -O0 -std=c++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/developer/projects/mini-debugger/ext/libelfin -I/home/ubuntu/developer/projects/mini-debugger/ext/linenoise -I/home/ubuntu/developer/projects/mini-debugger/include 
+CXX_INCLUDES = -I/root/developer/projects/mini-debugger/ext/libelfin -I/root/developer/projects/mini-debugger/ext/linenoise -I/root/developer/projects/mini-debugger/include 
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/developer/projects/mini-debugger/examples/hello.cpp" "/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/hello.dir/examples/hello.cpp.o"
+  "/root/developer/projects/mini-debugger/examples/hello.cpp" "/root/developer/projects/mini-debugger/CMakeFiles/hello.dir/examples/hello.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

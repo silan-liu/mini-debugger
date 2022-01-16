@@ -23,7 +23,7 @@ namespace minidebugger {
 
 		ptrace(PTRACE_GETREGS, pid, nullptr, &regs);
 
-		std::cout << "sp:" << std::hex <<  regs.sp << "; pc: " << std::hex << regs.pc << std::endl;
+		std::cout << "sp:" << std::hex <<  regs.rsp << "; pc: " << std::hex << regs.rip << std::endl;
 	}
 }
 #endif

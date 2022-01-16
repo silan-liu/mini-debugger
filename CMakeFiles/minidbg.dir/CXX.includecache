@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/developer/projects/mini-debugger/src/debugger.cpp
+/root/developer/projects/mini-debugger/src/debugger.cpp
 vector
 -
 sys/ptrace.h
@@ -22,11 +22,11 @@ iostream
 sys/personality.h
 -
 linenoise.h
-/home/ubuntu/developer/projects/mini-debugger/src/linenoise.h
+/root/developer/projects/mini-debugger/src/linenoise.h
 debugger.hpp
-/home/ubuntu/developer/projects/mini-debugger/src/debugger.hpp
+/root/developer/projects/mini-debugger/src/debugger.hpp
 registers.hpp
-/home/ubuntu/developer/projects/mini-debugger/src/registers.hpp
+/root/developer/projects/mini-debugger/src/registers.hpp
 
 ext/linenoise/linenoise.h
 

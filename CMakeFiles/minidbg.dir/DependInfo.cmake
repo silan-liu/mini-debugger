@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ubuntu/developer/projects/mini-debugger/ext/linenoise/linenoise.c" "/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o"
+  "/root/developer/projects/mini-debugger/ext/linenoise/linenoise.c" "/root/developer/projects/mini-debugger/CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/developer/projects/mini-debugger/src/debugger.cpp" "/home/ubuntu/developer/projects/mini-debugger/CMakeFiles/minidbg.dir/src/debugger.cpp.o"
+  "/root/developer/projects/mini-debugger/src/debugger.cpp" "/root/developer/projects/mini-debugger/CMakeFiles/minidbg.dir/src/debugger.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

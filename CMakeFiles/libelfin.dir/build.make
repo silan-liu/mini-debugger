@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/developer/projects/mini-debugger
+CMAKE_SOURCE_DIR = /root/developer/projects/mini-debugger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/developer/projects/mini-debugger
+CMAKE_BINARY_DIR = /root/developer/projects/mini-debugger
 
 # Utility rule file for libelfin.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/developer/projects/mini-debugger
 include CMakeFiles/libelfin.dir/progress.make
 
 CMakeFiles/libelfin:
-	cd /home/ubuntu/developer/projects/mini-debugger/ext/libelfin && make
+	cd /root/developer/projects/mini-debugger/ext/libelfin && make
 
 libelfin: CMakeFiles/libelfin
 libelfin: CMakeFiles/libelfin.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/libelfin.dir/clean:
 .PHONY : CMakeFiles/libelfin.dir/clean
 
 CMakeFiles/libelfin.dir/depend:
-	cd /home/ubuntu/developer/projects/mini-debugger && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger/CMakeFiles/libelfin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/developer/projects/mini-debugger && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger/CMakeFiles/libelfin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libelfin.dir/depend
 

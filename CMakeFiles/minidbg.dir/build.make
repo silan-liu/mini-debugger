@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/developer/projects/mini-debugger
+CMAKE_SOURCE_DIR = /root/developer/projects/mini-debugger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/developer/projects/mini-debugger
+CMAKE_BINARY_DIR = /root/developer/projects/mini-debugger
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minidbg.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/minidbg.dir/flags.make
 
 CMakeFiles/minidbg.dir/src/debugger.cpp.o: CMakeFiles/minidbg.dir/flags.make
 CMakeFiles/minidbg.dir/src/debugger.cpp.o: src/debugger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/developer/projects/mini-debugger/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minidbg.dir/src/debugger.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minidbg.dir/src/debugger.cpp.o -c /home/ubuntu/developer/projects/mini-debugger/src/debugger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/developer/projects/mini-debugger/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minidbg.dir/src/debugger.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minidbg.dir/src/debugger.cpp.o -c /root/developer/projects/mini-debugger/src/debugger.cpp
 
 CMakeFiles/minidbg.dir/src/debugger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minidbg.dir/src/debugger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/developer/projects/mini-debugger/src/debugger.cpp > CMakeFiles/minidbg.dir/src/debugger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/developer/projects/mini-debugger/src/debugger.cpp > CMakeFiles/minidbg.dir/src/debugger.cpp.i
 
 CMakeFiles/minidbg.dir/src/debugger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minidbg.dir/src/debugger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/developer/projects/mini-debugger/src/debugger.cpp -o CMakeFiles/minidbg.dir/src/debugger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/developer/projects/mini-debugger/src/debugger.cpp -o CMakeFiles/minidbg.dir/src/debugger.cpp.s
 
 CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o: CMakeFiles/minidbg.dir/flags.make
 CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o: ext/linenoise/linenoise.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/developer/projects/mini-debugger/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o   -c /home/ubuntu/developer/projects/mini-debugger/ext/linenoise/linenoise.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/developer/projects/mini-debugger/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.o   -c /root/developer/projects/mini-debugger/ext/linenoise/linenoise.c
 
 CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/developer/projects/mini-debugger/ext/linenoise/linenoise.c > CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/developer/projects/mini-debugger/ext/linenoise/linenoise.c > CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.i
 
 CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/developer/projects/mini-debugger/ext/linenoise/linenoise.c -o CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/developer/projects/mini-debugger/ext/linenoise/linenoise.c -o CMakeFiles/minidbg.dir/ext/linenoise/linenoise.c.s
 
 # Object files for target minidbg
 minidbg_OBJECTS = \
@@ -97,7 +97,7 @@ minidbg: CMakeFiles/minidbg.dir/build.make
 minidbg: ext/libelfin/dwarf/libdwarf++.so
 minidbg: ext/libelfin/elf/libelf++.so
 minidbg: CMakeFiles/minidbg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/developer/projects/mini-debugger/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable minidbg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/developer/projects/mini-debugger/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable minidbg"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minidbg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +110,6 @@ CMakeFiles/minidbg.dir/clean:
 .PHONY : CMakeFiles/minidbg.dir/clean
 
 CMakeFiles/minidbg.dir/depend:
-	cd /home/ubuntu/developer/projects/mini-debugger && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger /home/ubuntu/developer/projects/mini-debugger/CMakeFiles/minidbg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/developer/projects/mini-debugger && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger /root/developer/projects/mini-debugger/CMakeFiles/minidbg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/minidbg.dir/depend
 

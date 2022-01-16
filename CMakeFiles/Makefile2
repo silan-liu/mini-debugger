@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/developer/projects/mini-debugger
+CMAKE_SOURCE_DIR = /root/developer/projects/mini-debugger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/developer/projects/mini-debugger
+CMAKE_BINARY_DIR = /root/developer/projects/mini-debugger
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -77,14 +77,14 @@ clean: CMakeFiles/minidbg.dir/clean
 CMakeFiles/libelfin.dir/all:
 	$(MAKE) -f CMakeFiles/libelfin.dir/build.make CMakeFiles/libelfin.dir/depend
 	$(MAKE) -f CMakeFiles/libelfin.dir/build.make CMakeFiles/libelfin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/developer/projects/mini-debugger/CMakeFiles --progress-num= "Built target libelfin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/developer/projects/mini-debugger/CMakeFiles --progress-num= "Built target libelfin"
 .PHONY : CMakeFiles/libelfin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libelfin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/developer/projects/mini-debugger/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/developer/projects/mini-debugger/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libelfin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/developer/projects/mini-debugger/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/developer/projects/mini-debugger/CMakeFiles 0
 .PHONY : CMakeFiles/libelfin.dir/rule
 
 # Convenience name for target.
@@ -104,14 +104,14 @@ CMakeFiles/libelfin.dir/clean:
 CMakeFiles/hello.dir/all:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/developer/projects/mini-debugger/CMakeFiles --progress-num=1,2 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/developer/projects/mini-debugger/CMakeFiles --progress-num=1,2 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/developer/projects/mini-debugger/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/developer/projects/mini-debugger/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/developer/projects/mini-debugger/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/developer/projects/mini-debugger/CMakeFiles 0
 .PHONY : CMakeFiles/hello.dir/rule
 
 # Convenience name for target.
@@ -131,14 +131,14 @@ CMakeFiles/hello.dir/clean:
 CMakeFiles/minidbg.dir/all: CMakeFiles/libelfin.dir/all
 	$(MAKE) -f CMakeFiles/minidbg.dir/build.make CMakeFiles/minidbg.dir/depend
 	$(MAKE) -f CMakeFiles/minidbg.dir/build.make CMakeFiles/minidbg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/developer/projects/mini-debugger/CMakeFiles --progress-num=3,4,5 "Built target minidbg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/developer/projects/mini-debugger/CMakeFiles --progress-num=3,4,5 "Built target minidbg"
 .PHONY : CMakeFiles/minidbg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minidbg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/developer/projects/mini-debugger/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/developer/projects/mini-debugger/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/minidbg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/developer/projects/mini-debugger/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/developer/projects/mini-debugger/CMakeFiles 0
 .PHONY : CMakeFiles/minidbg.dir/rule
 
 # Convenience name for target.

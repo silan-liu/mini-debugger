@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/developer/projects/mini-debugger/examples/hello.cpp
+/root/developer/projects/mini-debugger/examples/hello.cpp
 iostream
 -
 
